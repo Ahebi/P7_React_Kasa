@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px 120px;
+}
+nav {
+    width: 20%;
+}
+#ulNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
