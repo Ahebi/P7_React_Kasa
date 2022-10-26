@@ -1,3 +1,12 @@
 export default function accueil() {
-    return <div>Bonjour ici il y aura la page d'accueil</div>;
+    return (
+        <div id="page_accueil">
+            <div id="accueil_banniere">
+                <h1 id="accueil_banniere_text">
+                    Chez vous, partout et ailleurs
+                </h1>
+            </div>
+            <div id="gallery_logements"></div>
+        </div>
+    );
 }

@@ -1,3 +1,33 @@
-div {
-  color: blue;
+#page_accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#accueil_banniere {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  background: url("../img/img_accueil_banniere.jpg");
+  filter: brightness(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#accueil_banniere_text {
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+}
+
+#gallery_logements {
+  background-color: #f7f7f7;
+  width: 1240px;
+  height: 829px;
+  border-radius: 25px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=accueil.css.map */

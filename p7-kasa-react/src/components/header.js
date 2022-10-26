@@ -12,7 +12,7 @@ export default function header() {
                         <NavLink to="/">Accueil</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/A_Propos">A Propos</NavLink>{" "}
+                        <NavLink to="/a_propos">A Propos</NavLink>
                     </li>
                 </ul>
             </nav>
