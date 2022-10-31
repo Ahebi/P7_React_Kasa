@@ -1,3 +1,5 @@
+import Thumb from "../components/Thumb";
+
 export default function accueil() {
     return (
         <div id="page_accueil">
@@ -6,7 +8,14 @@ export default function accueil() {
                     Chez vous, partout et ailleurs
                 </h1>
             </div>
-            <div id="gallery_logements"></div>
+            <div id="gallery_logements">
+                <Thumb />
+                <Thumb />
+                <Thumb />
+                <Thumb />
+                <Thumb />
+                <Thumb />
+            </div>
         </div>
     );
 }
