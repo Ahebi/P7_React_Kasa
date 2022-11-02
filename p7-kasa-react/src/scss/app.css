@@ -1,7 +1,15 @@
-@import "./header.css";
-@import "./footer.css";
-@import "./accueil.css";
-@import "./a_propos.css";
 @import "./general.css";
-@import "./Thumb.css";
-@import "./tag.css";
+
+/* pages */
+
+@import "./pages/accueil.css";
+@import "./pages/a_propos.css";
+
+/* components */
+
+@import "./components/Thumb.css";
+@import "./components/tag.css";
+@import "./components/banniere.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/barreDeroulante.css";

@@ -1,0 +1,57 @@
+@import "../general.scss";
+
+.barreDeroulante {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.barreDeroulante_barre {
+    width: 582px;
+    height: 52px;
+    background-color: $mainColor;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.barreDeroulante_page {
+    background-color: #f7f7f7;
+    border-radius: 0px 0px 10px 10px;
+    width: 582px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: $mainColor;
+}
+.barreDeroulante_fleche {
+    cursor: pointer;
+}
+.barreDeroulante_fleche.rotate {
+    animation: flecheRotate 500ms alternate ease-in-out;
+}
+
+@keyframes deroulement {
+    0% {
+        translate: 0px -300px;
+    }
+
+    100% {
+        translate: 0px 0px;
+    }
+}
+@keyframes flecheRotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 180deg;
+    }
+}
