@@ -1,0 +1,15 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=montserrat);
+body {
+  font-family: "Montserrat", arial;
+}
+
+#tag {
+  background-color: #ff6060;
+  color: white;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=tag.css.map */

@@ -1,0 +1,11 @@
+@import "general";
+#tag {
+    background-color: $mainColor;
+    color: white;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
