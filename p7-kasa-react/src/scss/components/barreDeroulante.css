@@ -41,8 +41,8 @@ body {
 }
 
 .barreDeroulante_fleche.rotate {
-  -webkit-animation: flecheRotate 500ms alternate ease-in-out;
-          animation: flecheRotate 500ms alternate ease-in-out;
+  -webkit-animation: flecheRotate 500ms alternate ease-in-out forwards;
+          animation: flecheRotate 500ms alternate ease-in-out forwards;
 }
 
 @-webkit-keyframes deroulement {

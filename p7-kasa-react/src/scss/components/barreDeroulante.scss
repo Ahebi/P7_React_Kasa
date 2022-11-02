@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 .barreDeroulante_fleche.rotate {
-    animation: flecheRotate 500ms alternate ease-in-out;
+    animation: flecheRotate 500ms alternate ease-in-out forwards;
 }
 
 @keyframes deroulement {
