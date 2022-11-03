@@ -40,6 +40,11 @@ body {
   cursor: pointer;
 }
 
+.barreDeroulante_fleche.deroulement {
+  -webkit-animation: deroulement 500ms alternate ease-in-out forwards;
+          animation: deroulement 500ms alternate ease-in-out forwards;
+}
+
 .barreDeroulante_fleche.rotate {
   -webkit-animation: flecheRotate 500ms alternate ease-in-out forwards;
           animation: flecheRotate 500ms alternate ease-in-out forwards;

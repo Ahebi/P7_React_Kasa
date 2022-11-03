@@ -25,13 +25,11 @@
 
 #gallery_logements {
   background-color: #f7f7f7;
-  width: 1240px;
-  height: 829px;
+  width: 1260px;
   border-radius: 25px;
-  margin-bottom: 50px;
+  margin: 0px 0px 0px 0px;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: space-between;
 }/*# sourceMappingURL=accueil.css.map */

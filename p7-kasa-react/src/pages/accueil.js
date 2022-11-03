@@ -10,11 +10,6 @@ export default function accueil() {
             </div>
             <div id="gallery_logements">
                 <Thumb />
-                <Thumb />
-                <Thumb />
-                <Thumb />
-                <Thumb />
-                <Thumb />
             </div>
         </div>
     );

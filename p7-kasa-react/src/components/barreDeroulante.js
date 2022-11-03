@@ -4,11 +4,10 @@ import VectorFlecheBas from "../img/VectorFlecheBas.png";
 export default function BarreDeroulante() {
     useEffect(() => {
         let bouton = document.querySelectorAll(".barreDeroulante_fleche")[0];
-        console.log(bouton);
 
         bouton.addEventListener("click", function (event) {
             console.dir(event.target.classList);
-            event.target.classList.add("rotate");
+            event.target.classList.toggle("rotate");
             console.log(event.target);
         });
     });
