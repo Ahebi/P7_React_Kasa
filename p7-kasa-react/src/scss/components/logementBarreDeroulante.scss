@@ -34,10 +34,10 @@
 .LogementBarreDeroulante_fleche {
     cursor: pointer;
 }
-.LogementBarreDeroulante_fleche.deroulement {
+.deroulement {
     animation: deroulement 500ms alternate ease-in-out forwards;
 }
-.LogementBarreDeroulante_fleche.rotate {
+.rotate {
     animation: flecheRotate 500ms alternate ease-in-out forwards;
 }
 

@@ -40,12 +40,12 @@ body {
   cursor: pointer;
 }
 
-.LogementBarreDeroulante_fleche.deroulement {
+.deroulement {
   -webkit-animation: deroulement 500ms alternate ease-in-out forwards;
           animation: deroulement 500ms alternate ease-in-out forwards;
 }
 
-.LogementBarreDeroulante_fleche.rotate {
+.rotate {
   -webkit-animation: flecheRotate 500ms alternate ease-in-out forwards;
           animation: flecheRotate 500ms alternate ease-in-out forwards;
 }

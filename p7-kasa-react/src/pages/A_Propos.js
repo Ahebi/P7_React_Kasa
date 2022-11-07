@@ -11,7 +11,7 @@ export default function A_propos() {
                 ici test du component "banniere" <Banniere />
             </div>
             <div>
-                ici test du compoents "barre deroulante "
+                ici test du component "barre deroulante "
                 <LogementBarreDeroulante />
             </div>
         </>
