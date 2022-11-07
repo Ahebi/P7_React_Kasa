@@ -3,13 +3,13 @@ body {
   font-family: "Montserrat", arial;
 }
 
-.barreDeroulante {
+.LogementBarreDeroulante {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.barreDeroulante_barre {
+.LogementBarreDeroulante_barre {
   width: 582px;
   height: 52px;
   background-color: #ff6060;
@@ -22,7 +22,7 @@ body {
   z-index: 2;
 }
 
-.barreDeroulante_page {
+.LogementBarreDeroulante_page {
   background-color: #f7f7f7;
   border-radius: 0px 0px 10px 10px;
   width: 582px;
@@ -36,16 +36,16 @@ body {
   color: #ff6060;
 }
 
-.barreDeroulante_fleche {
+.LogementBarreDeroulante_fleche {
   cursor: pointer;
 }
 
-.barreDeroulante_fleche.deroulement {
+.LogementBarreDeroulante_fleche.deroulement {
   -webkit-animation: deroulement 500ms alternate ease-in-out forwards;
           animation: deroulement 500ms alternate ease-in-out forwards;
 }
 
-.barreDeroulante_fleche.rotate {
+.LogementBarreDeroulante_fleche.rotate {
   -webkit-animation: flecheRotate 500ms alternate ease-in-out forwards;
           animation: flecheRotate 500ms alternate ease-in-out forwards;
 }
@@ -82,4 +82,4 @@ body {
   100% {
     rotate: 180deg;
   }
-}/*# sourceMappingURL=barreDeroulante.css.map */
+}/*# sourceMappingURL=logementBarreDeroulante.css.map */

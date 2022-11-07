@@ -1,11 +1,11 @@
 @import "../general.scss";
 
-.barreDeroulante {
+.LogementBarreDeroulante {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-.barreDeroulante_barre {
+.LogementBarreDeroulante_barre {
     width: 582px;
     height: 52px;
     background-color: $mainColor;
@@ -17,7 +17,7 @@
     align-items: center;
     z-index: 2;
 }
-.barreDeroulante_page {
+.LogementBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
     width: 582px;
@@ -31,13 +31,13 @@
     margin-bottom: 10px;
     color: $mainColor;
 }
-.barreDeroulante_fleche {
+.LogementBarreDeroulante_fleche {
     cursor: pointer;
 }
-.barreDeroulante_fleche.deroulement {
+.LogementBarreDeroulante_fleche.deroulement {
     animation: deroulement 500ms alternate ease-in-out forwards;
 }
-.barreDeroulante_fleche.rotate {
+.LogementBarreDeroulante_fleche.rotate {
     animation: flecheRotate 500ms alternate ease-in-out forwards;
 }
 

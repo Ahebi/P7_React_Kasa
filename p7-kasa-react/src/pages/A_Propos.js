@@ -1,6 +1,6 @@
 import Tag from "../components/Tag";
 import Banniere from "../components/banniere";
-import BarreDeroulante from "../components/barreDeroulante";
+import LogementBarreDeroulante from "../components/logementBarreDeroulante";
 export default function A_propos() {
     return (
         <>
@@ -11,7 +11,8 @@ export default function A_propos() {
                 ici test du component "banniere" <Banniere />
             </div>
             <div>
-                ici test du compoents "barre deroulante "<BarreDeroulante />
+                ici test du compoents "barre deroulante "
+                <LogementBarreDeroulante />
             </div>
         </>
     );
