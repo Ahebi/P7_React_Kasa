@@ -1,5 +1,10 @@
 @import url(https://fr.allfont.net/allfont.css?fonts=montserrat);
+
+$mainColor: #ff6060;
+
 body {
     font-family: "Montserrat", arial;
 }
-$mainColor: #ff6060;
+a {
+    text-decoration: none;
+}

@@ -1,4 +1,8 @@
 @import url(https://fr.allfont.net/allfont.css?fonts=montserrat);
 body {
   font-family: "Montserrat", arial;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=general.css.map */

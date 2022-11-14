@@ -3,10 +3,6 @@ import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
 export default function LogementBarreDeroulante() {
     let toggleEvent = function (event) {
-        let bouton = document.querySelectorAll(
-            ".LogementBarreDeroulante_fleche"
-        )[0];
-        console.log("hello");
         event.target.classList.toggle("rotate");
     };
 
@@ -14,8 +10,6 @@ export default function LogementBarreDeroulante() {
         let bouton = document.querySelectorAll(
             ".LogementBarreDeroulante_fleche"
         )[0];
-
-        //bouton.replaceWith(bouton.cloneNode(true));
 
         console.log("Appel de useEffect");
 
