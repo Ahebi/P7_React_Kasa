@@ -26,4 +26,8 @@ a {
   color: #ff6060;
   font-weight: 500;
   font-size: 24px;
+}
+
+.active {
+  color: blue;
 }/*# sourceMappingURL=header.css.map */

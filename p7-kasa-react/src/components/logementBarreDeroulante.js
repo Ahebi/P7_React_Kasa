@@ -2,18 +2,25 @@ import { useEffect } from "react";
 import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
 export default function LogementBarreDeroulante() {
+    let toggleEvent = function (event) {
+        let bouton = document.querySelectorAll(
+            ".LogementBarreDeroulante_fleche"
+        )[0];
+        console.log("hello");
+        event.target.classList.toggle("rotate");
+    };
+
     useEffect(() => {
         let bouton = document.querySelectorAll(
             ".LogementBarreDeroulante_fleche"
         )[0];
 
-        bouton.addEventListener("click", function (event) {
-            if (bouton.classList.contains("rotate")) {
-                event.target.classList.remove("rotate");
-            } else {
-                event.target.classList.add("rotate");
-            }
-        });
+        //bouton.replaceWith(bouton.cloneNode(true));
+
+        console.log("Appel de useEffect");
+
+        bouton.removeEventListener("click", toggleEvent);
+        bouton.addEventListener("click", toggleEvent);
     });
 
     return (

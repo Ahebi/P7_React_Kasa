@@ -1,6 +1,6 @@
 export default function Thumb() {
     function affichageThumb() {
-        fetch("p7-kasa-reactsrclogements.json")
+        fetch("logements.json")
             .then(function (res) {
                 if (res.ok) {
                     return res.json();

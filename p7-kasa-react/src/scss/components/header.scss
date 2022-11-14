@@ -1,4 +1,4 @@
-@import "general";
+@import "../general";
 header {
     display: flex;
     flex-direction: row;
@@ -20,4 +20,7 @@ a {
     color: $mainColor;
     font-weight: 500;
     font-size: 24px;
+}
+.active {
+    color: blue;
 }

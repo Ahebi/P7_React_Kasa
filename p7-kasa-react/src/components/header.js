@@ -9,7 +9,9 @@ export default function header() {
             <nav>
                 <ul id="ulNav">
                     <li>
-                        <NavLink to="/">Accueil</NavLink>
+                        <NavLink to="/" end>
+                            Accueil
+                        </NavLink>
                     </li>
                     <li>
                         <NavLink to="/a_propos">A Propos</NavLink>
