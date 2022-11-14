@@ -16,7 +16,7 @@ export default function Thumb() {
                     let logementName = logements[i].title;
                     let logementCover = logements[i].cover;
 
-                    listeLogements.innerHTML += `<a class="thumb_a" href="#">
+                    listeLogements.innerHTML += `<a href="#">
                         <figure class="thumb_figure"> 
                             <img class="thumb_img" src="${logementCover}" alt="image cliquable de ${logementName}"></img>
            
