@@ -7,54 +7,56 @@ a {
   text-decoration: none;
 }
 
-.LogementBarreDeroulante {
+.aProposBarreDeroulante {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.LogementBarreDeroulante_barre {
-  width: 582px;
-  height: 52px;
+.aProposBarreDeroulante_barre {
+  width: 1023px;
+  height: 47px;
   background-color: #ff6060;
   border-radius: 5px;
   color: white;
   padding: 0px 10px;
+  font-weight: 500;
+  font-size: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 2;
 }
 
-.LogementBarreDeroulante_page {
+.aProposBarreDeroulante_page {
   background-color: #f7f7f7;
   border-radius: 0px 0px 10px 10px;
-  width: 582px;
+  width: 1023px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 5px;
-  font-size: 18px;
+  padding: 8px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 10px;
   color: #ff6060;
 }
 
-.LogementBarreDeroulante_fleche {
+.aProposBarreDeroulante_fleche {
   cursor: pointer;
 }
 
-.logementDeroulement {
-  -webkit-animation: logementDeroulement 500ms alternate ease-in-out forwards;
-          animation: logementDeroulement 500ms alternate ease-in-out forwards;
+.aProposDeroulement {
+  -webkit-animation: aProposDeroulement 500ms alternate ease-in-out forwards;
+          animation: aProposDeroulement 500ms alternate ease-in-out forwards;
 }
 
-.logementRotate {
-  -webkit-animation: logementFlecheRotate 500ms alternate ease-in-out forwards;
-          animation: logementFlecheRotate 500ms alternate ease-in-out forwards;
+.aProposRotate {
+  -webkit-animation: aProposFlecheRotate 500ms alternate ease-in-out forwards;
+          animation: aProposFlecheRotate 500ms alternate ease-in-out forwards;
 }
 
-@-webkit-keyframes logementDeroulement {
+@-webkit-keyframes aProposDeroulement {
   0% {
     translate: 0px -300px;
   }
@@ -63,7 +65,7 @@ a {
   }
 }
 
-@keyframes logementDeroulement {
+@keyframes aProposDeroulement {
   0% {
     translate: 0px -300px;
   }
@@ -71,7 +73,7 @@ a {
     translate: 0px 0px;
   }
 }
-@-webkit-keyframes logementFlecheRotate {
+@-webkit-keyframes aProposFlecheRotate {
   0% {
     rotate: 0deg;
   }
@@ -79,11 +81,11 @@ a {
     rotate: 180deg;
   }
 }
-@keyframes logementFlecheRotate {
+@keyframes aProposFlecheRotate {
   0% {
     rotate: 0deg;
   }
   100% {
     rotate: 180deg;
   }
-}/*# sourceMappingURL=logementBarreDeroulante.css.map */
+}/*# sourceMappingURL=aProposBarreDeroulante.css.map */

@@ -3,12 +3,12 @@ import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
 export default function LogementBarreDeroulante() {
     let toggleEvent = function (event) {
-        event.target.classList.toggle("rotate");
+        event.target.classList.toggle("logementRotate");
     };
 
     useEffect(() => {
         let bouton = document.querySelectorAll(
-            ".LogementBarreDeroulante_fleche"
+            ".LogementBarreDeroulante_barre"
         )[0];
 
         console.log("Appel de useEffect");

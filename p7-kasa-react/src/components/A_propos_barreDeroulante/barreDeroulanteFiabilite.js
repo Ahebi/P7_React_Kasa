@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import VectorFlecheBas from "../img/VectorFlecheBas.png";
+import VectorFlecheBas from "../../img/VectorFlecheBas.png";
 
-export default function LogementBarreDeroulante_fiabilite() {
+export default function BarreDeroulanteFiabilite() {
     let toggleEvent = function (event) {
         event.target.classList.toggle("rotate");
     };
 
     useEffect(() => {
         let bouton = document.querySelectorAll(
-            ".LogementBarreDeroulante_fleche"
+            ".aProposBarreDeroulante_barre"
         )[0];
 
         console.log("Appel de useEffect");

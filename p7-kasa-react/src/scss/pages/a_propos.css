@@ -1,1 +1,26 @@
-/*# sourceMappingURL=a_propos.css.map */
+#banniereAPropos {
+  border-radius: 25px;
+  width: 1240px;
+  height: 223px;
+}
+
+#FigureAPropos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FigureAPropos::before {
+  content: "";
+  position: absolute;
+  width: 1240px;
+  height: 222px;
+  border-radius: 25px;
+  background-color: black;
+  opacity: 0.3;
+}
+
+#divBarreDeroulante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=a_propos.css.map */

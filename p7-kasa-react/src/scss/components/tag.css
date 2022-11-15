@@ -3,6 +3,10 @@ body {
   font-family: "Montserrat", arial;
 }
 
+a {
+  text-decoration: none;
+}
+
 .tag {
   background-color: #ff6060;
   color: white;

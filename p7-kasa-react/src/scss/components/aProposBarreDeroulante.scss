@@ -1,47 +1,49 @@
 @import "../general.scss";
 
-.LogementBarreDeroulante {
+.aProposBarreDeroulante {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
-.LogementBarreDeroulante_barre {
-    width: 582px;
-    height: 52px;
+.aProposBarreDeroulante_barre {
+    width: 1023px;
+    height: 47px;
     background-color: $mainColor;
     border-radius: 5px;
     color: white;
     padding: 0px 10px;
+    font-weight: 500;
+    font-size: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
-.LogementBarreDeroulante_page {
+.aProposBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
-    width: 582px;
+    width: 1023px;
 
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 5px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
     color: $mainColor;
 }
-.LogementBarreDeroulante_fleche {
+.aProposBarreDeroulante_fleche {
     cursor: pointer;
 }
-.logementDeroulement {
-    animation: logementDeroulement 500ms alternate ease-in-out forwards;
+.aProposDeroulement {
+    animation: aProposDeroulement 500ms alternate ease-in-out forwards;
 }
-.logementRotate {
-    animation: logementFlecheRotate 500ms alternate ease-in-out forwards;
+.aProposRotate {
+    animation: aProposFlecheRotate 500ms alternate ease-in-out forwards;
 }
 
-@keyframes logementDeroulement {
+@keyframes aProposDeroulement {
     0% {
         translate: 0px -300px;
     }
@@ -50,7 +52,7 @@
         translate: 0px 0px;
     }
 }
-@keyframes logementFlecheRotate {
+@keyframes aProposFlecheRotate {
     0% {
         rotate: 0deg;
     }

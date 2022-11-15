@@ -3,6 +3,10 @@ body {
   font-family: "Montserrat", arial;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: row;
