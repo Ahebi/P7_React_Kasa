@@ -3,13 +3,20 @@ import VectorFlecheBas from "../../img/VectorFlecheBas.png";
 
 export default function BarreDeroulanteFiabilite() {
     let toggleEvent = function (event) {
-        event.target.classList.toggle("rotate");
+        event.target.classList.toggle("aProposRotate");
+        event.target.classList.toggle("aProposDeroulement");
     };
 
     useEffect(() => {
         let bouton = document.querySelectorAll(
             ".aProposBarreDeroulante_barre"
         )[0];
+        /*let iconeFleche = document.getElementsByClassName(
+            "aProposBarreDeroulante_fleche"
+        )[0];
+        let pageDeroulante = document.getElementsByClassName(
+            "aProposBarreDeroulante_page"
+        )[0];*/
 
         console.log("Appel de useEffect");
 

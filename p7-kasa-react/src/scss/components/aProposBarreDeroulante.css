@@ -26,6 +26,7 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  cursor: pointer;
 }
 
 .aProposBarreDeroulante_page {
@@ -40,10 +41,6 @@ a {
   font-weight: 400;
   margin-bottom: 10px;
   color: #ff6060;
-}
-
-.aProposBarreDeroulante_fleche {
-  cursor: pointer;
 }
 
 .aProposDeroulement {
