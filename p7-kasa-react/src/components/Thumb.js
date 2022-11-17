@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 export default function Thumb() {
     function affichageThumb() {
         fetch("logements.json")
