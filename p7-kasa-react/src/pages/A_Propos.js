@@ -1,4 +1,4 @@
-import BarreDeroulanteFiabilite from "../components/A_propos_barreDeroulante/barreDeroulanteFiabilite";
+import AProposBarreDeroulante from "../components/AProposBarreDeroulante";
 import banniereAPropos from "../img/kalen-emsley-Bkci_8qcdvQ-unsplash.png";
 export default function A_propos() {
     return (
@@ -12,7 +12,7 @@ export default function A_propos() {
                     ></img>
                 </figure>
                 <div id="divBarreDeroulante">
-                    <BarreDeroulanteFiabilite />
+                    <AProposBarreDeroulante />
                 </div>
             </div>
         </>

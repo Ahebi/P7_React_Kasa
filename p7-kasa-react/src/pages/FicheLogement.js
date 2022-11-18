@@ -8,7 +8,10 @@ export default function FicheLogement() {
             }
         })
         .then(function (logements) {
-            let logement = logements.find();
+            /*let idParam = getParameter("id");
+            let logement = logements.find(
+                (logement) => logement.id === idParam
+            );*/
         })
         .catch(function (_err) {
             console.log("Erreur ! : " + _err);

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 export default function Thumb() {
     function affichageThumb() {
         fetch("logements.json")
@@ -16,6 +15,7 @@ export default function Thumb() {
                 for (let i = 0; i < logements.length; i++) {
                     let logementName = logements[i].title;
                     let logementCover = logements[i].cover;
+                    //let id = logements[i].id;
 
                     listeLogements.innerHTML += `<a href="#">
                         <figure class="thumb_figure"> 
