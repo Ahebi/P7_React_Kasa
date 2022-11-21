@@ -10,7 +10,9 @@ export default function AProposBarreDeroulante() {
             "aProposBarreDeroulante_page"
         )[0];
         iconeFleche.classList.toggle("aProposRotate");
+        iconeFleche.classList.toggle("aProposReverseRotate");
         pageDeroulante.classList.toggle("aProposDeroulement");
+        pageDeroulante.classList.toggle("aProposReverseDeroulement");
     };
 
     useEffect(() => {
@@ -26,10 +28,10 @@ export default function AProposBarreDeroulante() {
 
     return (
         <div className="aProposBarreDeroulante">
-            <div className="aProposBarreDeroulante_barre">
+            <div className="aProposBarreDeroulante_barre aProposReverseDeroulement">
                 Fiabilite
                 <img
-                    className="aProposBarreDeroulante_fleche"
+                    className="aProposBarreDeroulante_fleche aProposReverseRotate"
                     src={VectorFlecheBas}
                     alt="icone cliquable  de fleche "
                 ></img>

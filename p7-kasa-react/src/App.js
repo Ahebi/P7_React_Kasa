@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Accueil from "./pages/accueil";
 import APropos from "./pages/A_Propos";
 import FicheLogement from "./pages/FicheLogement";
+
 function App() {
     return (
         <>
