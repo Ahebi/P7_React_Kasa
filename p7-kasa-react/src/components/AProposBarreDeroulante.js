@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
 export default function AProposBarreDeroulante() {
-    let toggleEvent = function (event) {
+    let toggleEvent = function () {
         let iconeFleche = document.getElementsByClassName(
             "aProposBarreDeroulante_fleche"
         )[0];
@@ -10,25 +9,16 @@ export default function AProposBarreDeroulante() {
             "aProposBarreDeroulante_page"
         )[0];
         iconeFleche.classList.toggle("aProposRotate");
-        iconeFleche.classList.toggle("aProposReverseRotate");
+
         pageDeroulante.classList.toggle("aProposDeroulement");
-        pageDeroulante.classList.toggle("aProposReverseDeroulement");
     };
-
-    useEffect(() => {
-        let bouton = document.querySelectorAll(
-            ".aProposBarreDeroulante_barre"
-        )[0];
-
-        console.log("Appel de useEffect");
-
-        bouton.removeEventListener("click", toggleEvent);
-        bouton.addEventListener("click", toggleEvent);
-    });
 
     return (
         <div className="aProposBarreDeroulante">
-            <div className="aProposBarreDeroulante_barre aProposReverseDeroulement">
+            <div
+                className="aProposBarreDeroulante_barre aProposReverseDeroulement"
+                onClick={() => toggleEvent()}
+            >
                 Fiabilite
                 <img
                     className="aProposBarreDeroulante_fleche aProposReverseRotate"

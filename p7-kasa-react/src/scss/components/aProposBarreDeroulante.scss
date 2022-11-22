@@ -36,16 +36,10 @@
 }
 
 .aProposDeroulement {
-    animation: aProposDeroulement 500ms normal ease-in-out;
-}
-.aProposReverseDeroulement {
-    animation: aProposDeroulement 500ms reverse ease-in-out;
+    animation: aProposDeroulement 500ms alternate ease-in-out forwards;
 }
 .aProposRotate {
-    animation: aProposFlecheRotate 500ms normal ease-in-out;
-}
-.aProposReverseRotate {
-    animation: aProposFlecheRotate 500ms reverse ease-in-out;
+    animation: aProposFlecheRotate 500ms normal ease-in-out forwards;
 }
 
 @keyframes aProposDeroulement {
