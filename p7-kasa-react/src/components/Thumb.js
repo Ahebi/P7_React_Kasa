@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Thumb() {
-    //setting the state variable
     const [logements, setLogements] = useState([]);
 
     const fetchLogements = async () => {
         const response = await fetch("logements.json");
         const data = await response.json();
-        //update the state
+
         setLogements(data);
     };
 
@@ -16,19 +16,20 @@ export default function Thumb() {
     }, []);
 
     return (
-        <div>
+        <div className="mainDivThumb">
             {logements.map((logement) => (
-                <figure key={logement.id} class="thumb_figure">
-                    <img
-                        class="thumb_img"
-                        src={logement.cover}
-                        alt={logement.title}
-                    ></img>
-                    <figcaption class="thumb_text">
-                        
-                        {logement.title}
-                    </figcaption>
-                </figure>
+                <NavLink to={`/fiche_logement/${logement.id}`}>
+                    <figure key={logement.id} class="thumb_figure">
+                        <img
+                            class="thumb_img"
+                            src={logement.cover}
+                            alt={logement.title}
+                        ></img>
+                        <figcaption class="thumb_text">
+                            {logement.title}
+                        </figcaption>
+                    </figure>
+                </NavLink>
             ))}
         </div>
     );

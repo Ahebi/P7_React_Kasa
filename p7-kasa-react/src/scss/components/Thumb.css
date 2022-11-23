@@ -42,4 +42,9 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.mainDivThumb {
+  display: flex;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=thumb.css.map */
