@@ -1,19 +1,8 @@
-import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
 import { NavLink } from "react-router-dom";
 
 export default function Thumb() {
-    const [logements, setLogements] = useState([]);
-
-    const fetchLogements = async () => {
-        const response = await fetch("logements.json");
-        const data = await response.json();
-
-        setLogements(data);
-    };
-
-    useEffect(() => {
-        fetchLogements();
-    }, []);
+    const { logements } = useFetch(`logements.json`);
 
     return (
         <div className="mainDivThumb">

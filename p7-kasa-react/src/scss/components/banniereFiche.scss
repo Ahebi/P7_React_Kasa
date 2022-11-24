@@ -1,7 +1,18 @@
 #components_banniere {
-    background-image: url("../../img/Background_FicheLogement.png");
-
+    background: url("../../img/Background_FicheLogement.png");
     border-radius: 25px;
     width: 1240px;
     height: 415px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ficheLogement_divVectorFleche {
+    height: 100%;
+    width: 15%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
