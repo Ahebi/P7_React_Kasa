@@ -1,38 +1,33 @@
 import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
-export default function AProposBarreDeroulante() {
+export default function AProposBarreDeroulante(props) {
     let toggleEvent = function () {
-        let iconeFleche = document.getElementsByClassName(
-            "aProposBarreDeroulante_fleche"
-        )[0];
         let pageDeroulante = document.getElementsByClassName(
             "aProposBarreDeroulante_page"
-        )[0];
-        iconeFleche.classList.toggle("aProposRotate");
+        )[props.numero];
+        let iconeFleche = document.getElementsByClassName(
+            "aProposBarreDeroulante_fleche"
+        )[props.numero];
 
+        iconeFleche.classList.toggle("aProposRotate");
         pageDeroulante.classList.toggle("aProposDeroulement");
     };
 
     return (
         <div className="aProposBarreDeroulante">
             <div
-                className="aProposBarreDeroulante_barre aProposReverseDeroulement"
+                className="aProposBarreDeroulante_barre "
                 onClick={() => toggleEvent()}
             >
-                Fiabilite
+                {props.titre}
                 <img
-                    className="aProposBarreDeroulante_fleche aProposReverseRotate"
+                    className="aProposBarreDeroulante_fleche "
                     src={VectorFlecheBas}
                     alt="icone cliquable  de fleche "
                 ></img>
             </div>
             <div className="aProposBarreDeroulante_page">
-                <p>
-                    Les annonces postées sur Kasa garantissent une fiabilité
-                    totale. Les photos sont conformes aux logements, et toutes
-                    les informations sont régulièrement vérifiées par nos
-                    équipes.
-                </p>
+                <p>{props.description}</p>
             </div>
         </div>
     );
