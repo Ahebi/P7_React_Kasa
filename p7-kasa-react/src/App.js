@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Accueil from "./pages/accueil";
 import APropos from "./pages/A_Propos";
 import FicheLogement from "./pages/FicheLogement";
+import Error404 from "./pages/error404";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/" element={<Accueil />} />
                 <Route path="/a_propos" element={<APropos />} />
                 <Route path="/fiche_logement/:id" element={<FicheLogement />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
 
             <Footer />

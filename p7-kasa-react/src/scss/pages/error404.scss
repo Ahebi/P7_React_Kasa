@@ -1,0 +1,25 @@
+@import "../general";
+
+#mainDiv404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#error404_figure {
+    margin-top: 100px;
+}
+#error404_texte {
+    font-weight: 500;
+    font-size: 36px;
+    color: $mainColor;
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+#error404_lienPageAccueil {
+    color: $mainColor;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
