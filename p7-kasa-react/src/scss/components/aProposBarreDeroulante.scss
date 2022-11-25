@@ -37,7 +37,7 @@
 
     position: relative;
     top: -200px;
-    display: none;
+
     overflow: hidden;
 }
 .aProposBarreDeroulante_fleche {
@@ -48,5 +48,4 @@
 }
 .aProposDeroulement {
     transform: translateY(200px);
-    display: flex;
 }

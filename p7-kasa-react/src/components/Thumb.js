@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch";
 import { NavLink } from "react-router-dom";
 
 export default function Thumb() {
-    const { logements } = useFetch(`logements.json`);
+    const logements = useFetch();
 
     return (
         <div className="mainDivThumb">

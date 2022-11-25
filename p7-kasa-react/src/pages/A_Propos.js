@@ -23,22 +23,18 @@ export default function A_propos() {
                     <AProposBarreDeroulante
                         titre={"Fiabilité"}
                         description={descriptionFiabilité}
-                        numero={0}
                     />
                     <AProposBarreDeroulante
                         titre={"Respect"}
                         description={descriptionRespect}
-                        numero={1}
                     />
                     <AProposBarreDeroulante
                         titre={"Service"}
                         description={descriptionService}
-                        numero={2}
                     />
                     <AProposBarreDeroulante
                         titre={"Sécurité"}
                         description={descriptionSécurité}
-                        numero={3}
                     />
                 </div>
             </div>

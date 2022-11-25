@@ -1,13 +1,15 @@
 import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
 export default function AProposBarreDeroulante(props) {
-    let toggleEvent = function () {
-        let pageDeroulante = document.getElementsByClassName(
+    let toggleEvent = function (event) {
+        let barreDeroulante = event.target.closest(".aProposBarreDeroulante");
+
+        let pageDeroulante = barreDeroulante.getElementsByClassName(
             "aProposBarreDeroulante_page"
-        )[props.numero];
-        let iconeFleche = document.getElementsByClassName(
+        )[0];
+        let iconeFleche = barreDeroulante.getElementsByClassName(
             "aProposBarreDeroulante_fleche"
-        )[props.numero];
+        )[0];
 
         iconeFleche.classList.toggle("aProposRotate");
         pageDeroulante.classList.toggle("aProposDeroulement");
@@ -17,7 +19,7 @@ export default function AProposBarreDeroulante(props) {
         <div className="aProposBarreDeroulante">
             <div
                 className="aProposBarreDeroulante_barre "
-                onClick={() => toggleEvent()}
+                onClick={toggleEvent}
             >
                 {props.titre}
                 <img

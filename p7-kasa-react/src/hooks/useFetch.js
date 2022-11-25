@@ -3,7 +3,7 @@ export default function useFetch() {
     const [logements, setLogements] = useState([]);
 
     const fetchLogements = async () => {
-        const response = await fetch("logements.json");
+        const response = await fetch("/logements.json");
         const logements = await response.json();
 
         setLogements(logements);
@@ -12,5 +12,5 @@ export default function useFetch() {
     useEffect(() => {
         fetchLogements();
     }, []);
-    return { logements };
+    return logements;
 }

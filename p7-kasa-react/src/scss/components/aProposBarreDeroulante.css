@@ -45,7 +45,6 @@ a {
   transition: all ease-in-out 300ms;
   position: relative;
   top: -200px;
-  display: none;
   overflow: hidden;
 }
 
@@ -59,5 +58,4 @@ a {
 
 .aProposDeroulement {
   transform: translateY(200px);
-  display: flex;
 }/*# sourceMappingURL=aProposBarreDeroulante.css.map */
