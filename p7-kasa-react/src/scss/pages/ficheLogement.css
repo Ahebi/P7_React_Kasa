@@ -12,12 +12,14 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 85%;
 }
 
 #ficheLogement_groupe1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #ficheLogement_groupe2 {
@@ -48,7 +50,16 @@ a {
 }
 
 #ficheLogement_profil {
+  display: flex;
+  align-items: center;
   color: #ff6060;
   font-size: 18px;
   font-weight: 500;
+}
+
+#ficheLogement_photoProfil {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  margin-left: 5px;
 }/*# sourceMappingURL=ficheLogement.css.map */

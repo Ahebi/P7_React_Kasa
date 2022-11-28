@@ -7,7 +7,7 @@ export default function FicheLogement() {
     let params = useParams();
     const logements = useFetch();
 
-    console.log("Logements :: ");
+    console.log("Logements : ");
     console.log(logements);
 
     let logement = logements.find((logement) => params.id === logement.id);
@@ -31,7 +31,12 @@ export default function FicheLogement() {
                     </div>
                     <div>
                         <div id="ficheLogement_profil">
-                            {logement.host.name} et {logement.host.picture}
+                            {logement.host.name}
+                            <img
+                                id="ficheLogement_photoProfil"
+                                src={logement.host.picture}
+                                alt="profil"
+                            ></img>
                         </div>
                         <div>{logement.rating}</div>
                     </div>
