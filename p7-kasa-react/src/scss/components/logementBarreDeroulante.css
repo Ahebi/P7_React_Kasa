@@ -1,0 +1,89 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=montserrat);
+body {
+  font-family: "Montserrat", arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+.LogementBarreDeroulante {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.LogementBarreDeroulante_barre {
+  width: 582px;
+  height: 52px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  color: white;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.LogementBarreDeroulante_page {
+  background-color: #f7f7f7;
+  border-radius: 0px 0px 10px 10px;
+  width: 582px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #ff6060;
+}
+
+.LogementBarreDeroulante_fleche {
+  cursor: pointer;
+}
+
+.logementDeroulement {
+  -webkit-animation: logementDeroulement 500ms alternate ease-in-out forwards;
+          animation: logementDeroulement 500ms alternate ease-in-out forwards;
+}
+
+.logementRotate {
+  -webkit-animation: logementFlecheRotate 500ms alternate ease-in-out forwards;
+          animation: logementFlecheRotate 500ms alternate ease-in-out forwards;
+}
+
+@-webkit-keyframes logementDeroulement {
+  0% {
+    translate: 0px -300px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes logementDeroulement {
+  0% {
+    translate: 0px -300px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+@-webkit-keyframes logementFlecheRotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 180deg;
+  }
+}
+@keyframes logementFlecheRotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 180deg;
+  }
+}/*# sourceMappingURL=logementBarreDeroulante.css.map */

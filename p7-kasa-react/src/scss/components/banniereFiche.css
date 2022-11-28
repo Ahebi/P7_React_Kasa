@@ -1,51 +1,24 @@
 #components_banniere {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   width: 100%;
-  position: relative;
 }
 
 #ficheLogement_figureBanniere {
-  display: flex;
-  justify-content: center;
-  height: 470px;
-  width: 100%;
-  margin: 0px;
+  height: 415px;
 }
 
 #ficheLogement_imgBanniere {
   border-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
   height: 100%;
-}
-
-#banniereLogementFigcaption {
-  position: absolute;
-  bottom: 1%;
-  z-index: 2;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .ficheLogement_divVectorFleche {
   height: 100%;
   width: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
-  position: absolute;
-}
-
-#divVectorFlecheGauche {
-  left: 0%;
-}
-
-#divVectorFlecheDroite {
-  right: 0%;
 }/*# sourceMappingURL=banniereFiche.css.map */

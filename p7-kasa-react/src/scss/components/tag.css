@@ -10,14 +10,11 @@ a {
 .tag {
   background-color: #ff6060;
   color: white;
-  font-size: 14px;
-  font-weight: 500;
-  width: 150px;
+  width: 115px;
   height: 25px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3px;
   margin: 5px 5px;
 }/*# sourceMappingURL=tag.css.map */
