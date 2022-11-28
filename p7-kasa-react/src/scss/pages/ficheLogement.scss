@@ -5,7 +5,11 @@
     margin-left: 8%;
     margin-right: 8%;
 }
-
+#ficheLogement_groupe1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #ficheLogement_groupe2 {
     display: flex;
     justify-content: space-between;
