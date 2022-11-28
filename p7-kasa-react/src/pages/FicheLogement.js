@@ -15,8 +15,6 @@ export default function FicheLogement() {
     let logement = logements.find((logement) => params.id === logement.id);
 
     console.log("logement = " + logement);
-    console.log("pictures : ");
-    console.log(logement.pictures);
 
     return (
         <div id="divFicheLogement">
