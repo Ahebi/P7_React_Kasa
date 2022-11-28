@@ -1,22 +1,28 @@
 import VectorFlecheGauche from "../img/VectorFlecheGauche.png";
 import VectorFlecheDroite from "../img/VectorFlecheDroite.png";
 
-export default function banniereFiche() {
+export default function banniereFiche(props) {
     return (
         <div id="components_banniere">
-            <div className="ficheLogement_divVectorFleche">
+            <div
+                id="divVectorFlecheGauche"
+                className="ficheLogement_divVectorFleche"
+            >
                 <img src={VectorFlecheGauche} alt="Fleche vers la gauche"></img>
             </div>
             <figure id="ficheLogement_figureBanniere">
                 <img
                     id="ficheLogement_imgBanniere"
-                    src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+                    src={props.pictures[0]}
                     alt="banniere personalisé du logement"
                 ></img>
-                <figcaption>1/4</figcaption>
+                <figcaption id="banniereLogementFigcaption">1/4</figcaption>
             </figure>
 
-            <div className="ficheLogement_divVectorFleche">
+            <div
+                id="divVectorFlecheDroite"
+                className="ficheLogement_divVectorFleche"
+            >
                 <img src={VectorFlecheDroite} alt="Fleche vers la Droite"></img>
             </div>
         </div>

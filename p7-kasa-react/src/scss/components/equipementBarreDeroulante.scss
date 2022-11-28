@@ -1,16 +1,17 @@
 @import "../general.scss";
 
-.aProposBarreDeroulante {
+.equipementBarreDeroulante {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 20px;
+    margin: 50px 20px;
+    width: 50%;
 }
-.aProposBarreDeroulante_barre {
-    width: 1023px;
-    height: 47px;
+.equipementBarreDeroulante_barre {
+    height: 52px;
+
     background-color: $mainColor;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     padding: 0px 10px;
     font-weight: 500;
@@ -21,10 +22,13 @@
     z-index: 2;
     cursor: pointer;
 }
-.aProposBarreDeroulante_page {
+.equipementBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
-    width: 1023px;
+
+    display: flex;
+    flex-direction: column;
+
     padding: 8px;
     font-size: 24px;
     font-weight: 400;
@@ -32,17 +36,15 @@
     color: $mainColor;
     transition: all ease-in-out 300ms;
 
-    position: relative;
-    top: -200px;
-
+    transform: translateY(-600px);
     overflow: hidden;
 }
-.aProposBarreDeroulante_fleche {
-    transition: all ease-in-out 400ms;
+.equipementBarreDeroulante_fleche {
+    transition: all ease-in-out 300ms;
 }
-.aProposRotate {
+.equipementRotate {
     transform: rotate(180deg);
 }
-.aProposDeroulement {
-    transform: translateY(200px);
+.equipementDeroulement {
+    transform: translateY(-5px);
 }

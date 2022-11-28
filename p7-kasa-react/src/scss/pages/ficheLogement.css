@@ -9,23 +9,16 @@ a {
 
 #divFicheLogement {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: 85%;
-}
-
-#ficheLogement_groupe1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 #ficheLogement_groupe2 {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  width: 100%;
 }
 
 #ficheLogement_titre {
@@ -61,5 +54,13 @@ a {
   border-radius: 100px;
   width: 64px;
   height: 64px;
-  margin-left: 5px;
+  margin-left: 20px;
+}
+
+.star {
+  margin: 2px;
+}
+
+#ficheLogement_groupe3 {
+  display: flex;
 }/*# sourceMappingURL=ficheLogement.css.map */
