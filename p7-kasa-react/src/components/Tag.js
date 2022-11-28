@@ -1,3 +1,3 @@
-export default function Tag() {
-    return <div className="tag">tag-name</div>;
+export default function Tag(props) {
+    return <div className="tag">{props.tagName}</div>;
 }
