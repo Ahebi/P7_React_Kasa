@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
     return (
         <header>
-            <div>
-                <img src={logoKasa} alt="logo Kasa orange"></img>
+            <div id="divLogoKasa">
+                <img id="logoKasa" src={logoKasa} alt="logo Kasa orange"></img>
             </div>
-            <nav>
+            <nav id="header_nav">
                 <ul id="ulNav">
                     <li>
                         <NavLink to="/" end>
                             Accueil
                         </NavLink>
                     </li>
-                    <li>
+                    <li className="header_li">
                         <NavLink to="/a_propos">A Propos</NavLink>
                     </li>
                 </ul>

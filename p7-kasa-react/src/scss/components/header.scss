@@ -1,4 +1,8 @@
 @import "../general";
+
+/*Version Desktop*/
+@media screen and (min-width: 820px) {
+}
 header {
     display: flex;
     flex-direction: row;
@@ -23,4 +27,128 @@ li {
 }
 .active {
     text-decoration: underline;
+}
+/*Version Mobile*/
+@media screen and (min-width: 470px) and (max-width: 819px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 40px;
+    }
+    #divLogoKasa {
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    #logoKasa {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #header_nav {
+        width: 50%;
+    }
+    #ulNav {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .header_li {
+        margin: 0px;
+    }
+
+    #ulNav a {
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .active {
+        text-decoration: underline;
+    }
+}
+@media screen and (min-width: 368px) and (max-width: 469px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 40px;
+    }
+    #divLogoKasa {
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    #logoKasa {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #header_nav {
+        width: 70%;
+    }
+    #ulNav {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .header_li {
+        margin: 0px;
+    }
+
+    #ulNav a {
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .active {
+        text-decoration: underline;
+    }
+}
+@media screen and (max-width: 367px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px 40px;
+    }
+    #divLogoKasa {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    #logoKasa {
+        width: 100%;
+        display: flex;
+        align-self: center;
+    }
+    #header_nav {
+        width: 70%;
+    }
+    #ulNav {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .header_li {
+        margin: 0px;
+    }
+
+    #ulNav a {
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .active {
+        text-decoration: underline;
+    }
 }

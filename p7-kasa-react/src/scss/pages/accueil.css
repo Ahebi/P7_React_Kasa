@@ -1,49 +1,113 @@
-#page_accueil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* version Desktop*/
+@media screen and (min-width: 820px) {
+  #page_accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #accueil_banniere {
+    width: 80%;
+    height: 223px;
+    border-radius: 25px;
+    background: url("../../img/img_accueil_banniere.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  #accueil_banniere::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 222px;
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0.3;
+  }
+  #accueil_banniere_text {
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
 }
-
-#accueil_banniere {
-  width: 1240px;
-  height: 223px;
-  border-radius: 25px;
-  background: url("../../img/img_accueil_banniere.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-  width: 1240px;
-  height: 222px;
+/* version Mobile*/
+@media screen and (min-width: 461px) and (max-width: 819px) {
+  #page_accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #accueil_banniere {
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    background: url("../../img/img_accueil_banniere.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  #accueil_banniere::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 222px;
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0.3;
+  }
+  #accueil_banniere_text {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
 }
-#accueil_banniere::before {
-  content: "";
-  position: absolute;
-  width: 1240px;
-  height: 222px;
-  border-radius: 25px;
-  background-color: black;
-  opacity: 0.3;
-}
-
-#accueil_banniere_text {
-  font-size: 48px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-
-#gallery_logements {
-  background-color: #f7f7f7;
-  width: 1260px;
-  border-radius: 25px;
-  margin: 0px 0px 0px 0px;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: space-between;
+@media screen and (max-width: 460px) {
+  #page_accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #accueil_banniere {
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    background: url("../../img/img_accueil_banniere.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  #accueil_banniere::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 222px;
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0.3;
+  }
+  #accueil_banniere_text {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
 }/*# sourceMappingURL=accueil.css.map */

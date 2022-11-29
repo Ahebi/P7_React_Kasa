@@ -8,9 +8,7 @@ export default function accueil() {
                     Chez vous, partout et ailleurs
                 </h1>
             </div>
-            <div id="gallery_logements">
-                <Thumb />
-            </div>
+            <Thumb />
         </div>
     );
 }

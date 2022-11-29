@@ -5,9 +5,12 @@ export default function Thumb() {
     const logements = useFetch();
 
     return (
-        <div className="mainDivThumb">
+        <div id="gallery_logements">
             {logements.map((logement) => (
-                <NavLink to={`/fiche_logement/${logement.id}`}>
+                <NavLink
+                    className="NavLinkThumb"
+                    to={`/fiche_logement/${logement.id}`}
+                >
                     <figure key={logement.id} class="thumb_figure">
                         <img
                             class="thumb_img"
