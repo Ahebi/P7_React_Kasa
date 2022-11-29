@@ -1,5 +1,5 @@
 import logoFooter from "../img/logoFooter.png";
-export default function footer() {
+export default function Footer() {
     return (
         <footer>
             <div>

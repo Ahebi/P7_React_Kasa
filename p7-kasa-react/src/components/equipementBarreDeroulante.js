@@ -1,6 +1,6 @@
 import VectorFlecheBas from "../img/VectorFlecheBas.png";
 
-export default function equipementBarreDeroulante(props) {
+export default function EquipementBarreDeroulante(props) {
     let toggleEvent = function (event) {
         let barreDeroulante = event.target.closest(
             ".equipementBarreDeroulante"
