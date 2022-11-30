@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-export default function useFetch() {
+export default function useFetchLogements() {
     const [logements, setLogements] = useState([]);
 
     const fetchLogements = async (url) => {

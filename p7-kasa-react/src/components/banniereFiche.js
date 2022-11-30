@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function BanniereFiche(props) {
     let [currentIndex, setCurrentIndex] = useState(0);
     let toggleLeftArrow = function () {
-        console.log("clique fleche gauche");
         if (currentIndex >= 1) {
             setCurrentIndex(currentIndex - 1);
         } else {
@@ -14,7 +13,6 @@ export default function BanniereFiche(props) {
     };
 
     let toggleRightArrow = function () {
-        console.log("clique fleche droite");
         if (currentIndex + 1 < props.pictures.length) {
             setCurrentIndex(currentIndex + 1);
         } else {

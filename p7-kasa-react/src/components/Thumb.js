@@ -1,8 +1,8 @@
-import useFetch from "../hooks/useFetch";
+import useFetchLogements from "../hooks/useFetchLogements";
 import { NavLink } from "react-router-dom";
 
 export default function Thumb() {
-    const logements = useFetch();
+    const logements = useFetchLogements();
 
     return (
         <div id="gallery_logements">

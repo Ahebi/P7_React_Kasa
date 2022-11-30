@@ -10,34 +10,32 @@ export default function A_propos() {
     const descriptionSécurité =
         "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
     return (
-        <>
-            <div>
-                <figure id="FigureAPropos">
-                    <img
-                        id="banniereAPropos"
-                        src={banniereAPropos}
-                        alt="banniere ou l'on voit une montagne"
-                    ></img>
-                </figure>
-                <div id="divBarreDeroulante">
-                    <AProposBarreDeroulante
-                        titre={"Fiabilité"}
-                        description={descriptionFiabilité}
-                    />
-                    <AProposBarreDeroulante
-                        titre={"Respect"}
-                        description={descriptionRespect}
-                    />
-                    <AProposBarreDeroulante
-                        titre={"Service"}
-                        description={descriptionService}
-                    />
-                    <AProposBarreDeroulante
-                        titre={"Sécurité"}
-                        description={descriptionSécurité}
-                    />
-                </div>
+        <div id="pageAPropos">
+            <figure id="FigureAPropos">
+                <img
+                    id="banniereAPropos"
+                    src={banniereAPropos}
+                    alt="banniere ou l'on voit une montagne"
+                ></img>
+            </figure>
+            <div id="divBarreDeroulante">
+                <AProposBarreDeroulante
+                    titre={"Fiabilité"}
+                    description={descriptionFiabilité}
+                />
+                <AProposBarreDeroulante
+                    titre={"Respect"}
+                    description={descriptionRespect}
+                />
+                <AProposBarreDeroulante
+                    titre={"Service"}
+                    description={descriptionService}
+                />
+                <AProposBarreDeroulante
+                    titre={"Sécurité"}
+                    description={descriptionSécurité}
+                />
             </div>
-        </>
+        </div>
     );
 }

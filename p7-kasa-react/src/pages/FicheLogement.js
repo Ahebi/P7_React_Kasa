@@ -1,13 +1,13 @@
 import BanniereFiche from "../components/BanniereFiche";
 import Tag from "../components/Tag";
-import useFetch from "../hooks/useFetch";
+import useFetchLogements from "../hooks/useFetchLogements";
 import { useParams } from "react-router-dom";
 import EquipementBarreDeroulante from "../components/EquipementBarreDeroulante";
 import Rating from "../components/Rating";
 
 export default function FicheLogement() {
     let params = useParams();
-    const logements = useFetch();
+    const logements = useFetchLogements();
 
     console.log("Logements : ");
     console.log(logements);
