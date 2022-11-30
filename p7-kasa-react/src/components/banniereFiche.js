@@ -4,28 +4,28 @@ import { useState } from "react";
 
 export default function BanniereFiche(props) {
     let [currentIndex, setCurrentIndex] = useState(0);
-    function toggleLeftArrow(e) {
+    let toggleLeftArrow = function () {
         console.log("clique fleche gauche");
         if (currentIndex >= 1) {
             setCurrentIndex(currentIndex - 1);
         } else {
-            e.preventDefault();
+            setCurrentIndex(props.pictures.length - 1);
         }
-    }
+    };
 
-    function toggleRightArrow(e) {
+    let toggleRightArrow = function () {
         console.log("clique fleche droite");
         if (currentIndex + 1 < props.pictures.length) {
             setCurrentIndex(currentIndex + 1);
         } else {
-            e.preventDefault();
+            setCurrentIndex(0);
         }
-    }
+    };
 
     return (
         <div id="components_banniere">
             <div
-                onClick={toggleLeftArrow()}
+                onClick={toggleLeftArrow}
                 id="divVectorFlecheGauche"
                 className="ficheLogement_divVectorFleche"
             >
@@ -43,7 +43,7 @@ export default function BanniereFiche(props) {
             </figure>
 
             <div
-                onClick={toggleRightArrow()}
+                onClick={toggleRightArrow}
                 id="divVectorFlecheDroite"
                 className="ficheLogement_divVectorFleche"
             >

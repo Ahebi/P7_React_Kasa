@@ -9,11 +9,21 @@ export default function Rating(props) {
         i++;
         if (i <= rating) {
             arrayStar.push(
-                <img className="star " src={fullStar} alt="etoile pleine"></img>
+                <img
+                    className="star "
+                    key={i}
+                    src={fullStar}
+                    alt="etoile pleine"
+                ></img>
             );
         } else {
             arrayStar.push(
-                <img className="star " src={emptyStar} alt="etoile vide"></img>
+                <img
+                    className="star "
+                    key={i}
+                    src={emptyStar}
+                    alt="etoile vide"
+                ></img>
             );
         }
     }

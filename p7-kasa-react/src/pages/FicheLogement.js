@@ -32,7 +32,7 @@ export default function FicheLogement() {
                         <p id="ficheLogement_lieu"> {logement.location} </p>
                         <div id="ficheLogement_groupe2_listeTag">
                             {logement.tags.map((tag) => (
-                                <Tag tagName={tag} />
+                                <Tag key={tag} tagName={tag} />
                             ))}
                         </div>
                     </div>
