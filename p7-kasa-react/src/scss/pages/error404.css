@@ -7,29 +7,87 @@ a {
   text-decoration: none;
 }
 
-#mainDiv404 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+@media screen and (min-width: 820px) {
+  #mainDiv404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #error404_figure {
+    margin-top: 180px;
+  }
+  #error404_texte {
+    font-weight: 500;
+    font-size: 36px;
+    color: #ff6060;
+    margin-top: 50px;
+    margin-bottom: 190px;
+  }
+  #error404_lienPageAccueil {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
 }
-
-#error404_figure {
-  margin-top: 100px;
+@media screen and (min-width: 580px) and (max-width: 819px) {
+  #mainDiv404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #error404_figure {
+    margin-top: 220px;
+  }
+  #img_logo404 {
+    width: 300px;
+  }
+  #error404_texte {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ff6060;
+    margin-top: 50px;
+    margin-bottom: 160px;
+  }
+  #error404_lienPageAccueil {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 80px;
+  }
 }
-
-#error404_texte {
-  font-weight: 500;
-  font-size: 36px;
-  color: #ff6060;
-  margin-top: 50px;
-  margin-bottom: 140px;
-}
-
-#error404_lienPageAccueil {
-  color: #ff6060;
-  font-weight: 500;
-  font-size: 18px;
-  text-decoration: underline;
-  margin-bottom: 50px;
+@media screen and (max-width: 579px) {
+  #mainDiv404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #error404_figure {
+    margin-top: 100px;
+  }
+  #img_logo404 {
+    width: 240px;
+    margin-bottom: 30px;
+  }
+  #error404_texte {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+    margin: 50px 0px 190px 0px;
+  }
+  #error404_lienPageAccueil {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=error404.css.map */

@@ -5,6 +5,7 @@ export default function error404() {
         <div id="mainDiv404">
             <figure id="error404_figure">
                 <img
+                    id="img_logo404"
                     src={logo404}
                     alt="logo erreur 404 la page n'existe pas !"
                 ></img>
