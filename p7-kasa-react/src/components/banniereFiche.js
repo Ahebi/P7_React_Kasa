@@ -27,7 +27,11 @@ export default function BanniereFiche(props) {
                 id="divVectorFlecheGauche"
                 className="ficheLogement_divVectorFleche"
             >
-                <img src={VectorFlecheGauche} alt="Fleche vers la gauche"></img>
+                <img
+                    className="banniere_img_fleche"
+                    src={VectorFlecheGauche}
+                    alt="Fleche vers la gauche"
+                ></img>
             </div>
             <figure id="ficheLogement_figureBanniere">
                 <img
@@ -45,7 +49,11 @@ export default function BanniereFiche(props) {
                 id="divVectorFlecheDroite"
                 className="ficheLogement_divVectorFleche"
             >
-                <img src={VectorFlecheDroite} alt="Fleche vers la Droite"></img>
+                <img
+                    className="banniere_img_fleche"
+                    src={VectorFlecheDroite}
+                    alt="Fleche vers la Droite"
+                ></img>
             </div>
         </div>
     );

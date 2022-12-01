@@ -27,5 +27,5 @@ export default function Rating(props) {
             );
         }
     }
-    return <div>{arrayStar.map((star) => star)}</div>;
+    return <div id="groupe2_rating">{arrayStar.map((star) => star)}</div>;
 }

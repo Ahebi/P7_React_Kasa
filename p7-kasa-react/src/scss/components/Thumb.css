@@ -8,7 +8,7 @@ a {
 }
 
 /* version Desktop*/
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1500px) {
   #gallery_logements {
     background-color: #f7f7f7;
     width: 80%;
@@ -20,14 +20,127 @@ a {
     flex-wrap: wrap;
   }
   .NavLinkThumb {
-    width: 25%;
+    width: 30%;
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 40px;
   }
   .thumb_figure {
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  .thumb_figure::before {
+    content: "";
     width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    opacity: 0.7;
+  }
+  .thumb_text {
+    width: 70%;
+    height: 25%;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  .thumb_img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .mainDivThumb {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1499px) {
+  #gallery_logements {
+    background-color: #f7f7f7;
+    width: 80%;
+    border-radius: 25px;
+    margin: 0px 0px 50px 0px;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .NavLinkThumb {
+    width: 45%;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .thumb_figure {
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+  .thumb_figure::before {
+    content: "";
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    opacity: 0.7;
+  }
+  .thumb_text {
+    width: 70%;
+    height: 25%;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  .thumb_img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .mainDivThumb {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 999px) {
+  #gallery_logements {
+    background-color: #f7f7f7;
+    width: 80%;
+    border-radius: 25px;
+    margin: 0px 0px 50px 0px;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .NavLinkThumb {
+    width: 43%;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .thumb_figure {
     height: 340px;
     border-radius: 10px;
     display: flex;
