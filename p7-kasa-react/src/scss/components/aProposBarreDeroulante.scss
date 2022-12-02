@@ -1,4 +1,5 @@
 @import "../general.scss";
+
 /*version Desktop*/
 @media screen and (min-width: 820px) {
 }
@@ -26,16 +27,15 @@
 .aProposBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
-
+    display: flex;
     padding: 8px;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
     color: $mainColor;
-    transition: all ease-in-out 300ms;
-
-    position: relative;
-    top: -200px;
+    transition: all ease-in-out 400ms;
+    display: none;
+    transform: translateY(-999px);
 
     overflow: hidden;
 }
@@ -46,7 +46,8 @@
     transform: rotate(180deg);
 }
 .aProposDeroulement {
-    transform: translateY(200px);
+    transform: translateY(0px);
+    display: flex;
 }
 
 /*version Mobile*/

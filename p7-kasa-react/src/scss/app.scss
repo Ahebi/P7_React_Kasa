@@ -1,0 +1,18 @@
+@import "./general";
+
+/* pages */
+
+@import "./pages/accueil";
+@import "./pages/a_propos";
+@import "./pages/ficheLogement";
+@import "./pages/error404";
+
+/* components */
+
+@import "./components/Thumb";
+@import "./components/tag";
+@import "./components/banniereFiche";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/equipementBarreDeroulante";
+@import "./components/aProposBarreDeroulante";

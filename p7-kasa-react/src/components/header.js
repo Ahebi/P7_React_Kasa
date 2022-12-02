@@ -1,6 +1,6 @@
 import logoKasa from "../img/logoKasa.png";
 import { NavLink } from "react-router-dom";
-export default function Header() {
+export default function header() {
     return (
         <header>
             <div id="divLogoKasa">

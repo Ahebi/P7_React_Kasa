@@ -12,6 +12,7 @@ export default function AProposBarreDeroulante(props) {
         )[0];
 
         iconeFleche.classList.toggle("aProposRotate");
+
         pageDeroulante.classList.toggle("aProposDeroulement");
     };
 
@@ -28,7 +29,7 @@ export default function AProposBarreDeroulante(props) {
                     alt="icone cliquable  de fleche "
                 ></img>
             </div>
-            <div className="aProposBarreDeroulante_page">
+            <div className="aProposBarreDeroulante_page ">
                 <p>{props.description}</p>
             </div>
         </div>
