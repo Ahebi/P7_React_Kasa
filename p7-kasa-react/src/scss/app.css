@@ -1200,9 +1200,9 @@ a {
   font-weight: 400;
   margin-bottom: 10px;
   color: #ff6060;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  top: -200px;
+  transition: all ease-in-out 400ms;
+  display: none;
+  transform: translateY(-999px);
   overflow: hidden;
 }
 
@@ -1215,7 +1215,8 @@ a {
 }
 
 .aProposDeroulement {
-  transform: translateY(200px);
+  transform: translateY(0px);
+  display: flex;
 }
 
 /*version Mobile*/
