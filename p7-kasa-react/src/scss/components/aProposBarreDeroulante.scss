@@ -2,72 +2,55 @@
 
 /*version Desktop*/
 @media screen and (min-width: 820px) {
-}
-.aProposBarreDeroulante {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 20px;
-    width: 70%;
-}
-.aProposBarreDeroulante_barre {
-    height: 47px;
-    background-color: $mainColor;
-    border-radius: 5px;
-    color: white;
-    padding: 0px 10px;
-    font-weight: 500;
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    cursor: pointer;
-}
-.aProposBarreDeroulante_page {
-    background-color: #f7f7f7;
-    border-radius: 0px 0px 10px 10px;
+    .aProposBarreDeroulante {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 20px;
+        width: 70%;
+    }
+    .aProposBarreDeroulante_barre {
+        height: 47px;
+        background-color: $mainColor;
+        border-radius: 5px;
+        color: white;
+        padding: 0px 10px;
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .aProposBarreDeroulante_page {
+        background-color: #f7f7f7;
+        border-radius: 0px 0px 10px 10px;
+        height: 0px;
+        padding: 8px;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: $mainColor;
+        transition: transform ease-in-out 300ms;
 
-    padding: 8px;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    color: $mainColor;
-    position: absolute;
-    transform: translateY(-999px);
-}
-.aProposBarreDeroulante_fleche {
-    transition: transform ease-in-out 300ms;
-}
-.aProposRotate {
-    transform: rotate(180deg);
-}
-.aProposDeroulementDescend {
-    animation: animationAPropos_Desktop_Descend 300ms ease-in-out forwards;
-}
-.aProposDeroulementMonte {
-    animation: animationAPropos_Desktop_Monte 300ms ease-in-out forwards;
-}
-
-@keyframes animationAPropos_Desktop_Descend {
-    0% {
-        transform: translateY(-999px);
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+    .aProposBarreDeroulante_fleche {
+        transition: transform ease-in-out 300ms;
+    }
+    .aProposRotate {
+        transform: rotate(180deg);
     }
 
-    100% {
-        transform: translateY(0px);
+    .aProposDeroulement {
+        transform: scaleY(1);
+        height: fit-content;
     }
 }
-@keyframes animationAPropos_Desktop_Monte {
-    0% {
-        transform: translateY(0px);
-    }
 
-    100% {
-        transform: translateY(-999px);
-    }
-}
 /*version Mobile*/
 @media screen and (max-width: 819px) {
     .aProposBarreDeroulante {

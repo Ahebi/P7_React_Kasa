@@ -13,8 +13,7 @@ export default function AProposBarreDeroulante(props) {
 
         iconeFleche.classList.toggle("aProposRotate");
 
-        pageDeroulante.classList.toggle("aProposDeroulementDescend");
-        pageDeroulante.classList.toggle("aProposDeroulementMonte");
+        pageDeroulante.classList.toggle("aProposDeroulement");
     };
 
     return (

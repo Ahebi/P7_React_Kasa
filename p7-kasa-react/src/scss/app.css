@@ -1170,6 +1170,7 @@ a {
 
 /*version Desktop*/
 .aProposBarreDeroulante {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1200,25 +1201,61 @@ a {
   font-weight: 400;
   margin-bottom: 10px;
   color: #ff6060;
-  transition: all ease-in-out 400ms;
-  display: none;
+  position: absolute;
   transform: translateY(-999px);
-  overflow: hidden;
 }
 
 .aProposBarreDeroulante_fleche {
-  transition: all ease-in-out 400ms;
+  transition: transform ease-in-out 300ms;
 }
 
 .aProposRotate {
   transform: rotate(180deg);
 }
 
-.aProposDeroulement {
-  transform: translateY(0px);
-  display: flex;
+.aProposDeroulementDescend {
+  -webkit-animation: animationAPropos_Desktop_Descend 300ms ease-in-out forwards;
+          animation: animationAPropos_Desktop_Descend 300ms ease-in-out forwards;
 }
 
+.aProposDeroulementMonte {
+  -webkit-animation: animationAPropos_Desktop_Monte 300ms ease-in-out forwards;
+          animation: animationAPropos_Desktop_Monte 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes animationAPropos_Desktop_Descend {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animationAPropos_Desktop_Descend {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes animationAPropos_Desktop_Monte {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-999px);
+  }
+}
+@keyframes animationAPropos_Desktop_Monte {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-999px);
+  }
+}
 /*version Mobile*/
 @media screen and (max-width: 819px) {
   .aProposBarreDeroulante {
