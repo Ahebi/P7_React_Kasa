@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 export default function useFetchLogements(url) {
-    const [Logements, setLogements] = useState({});
+    const [logements, setLogements] = useState({});
 
     const [isLoading, setLoading] = useState(true);
 
@@ -15,9 +15,9 @@ export default function useFetchLogements(url) {
             try {
                 const response = await fetch(url);
 
-                const Logements = await response.json();
+                const logements = await response.json();
 
-                setLogements(Logements);
+                setLogements(logements);
             } catch (err) {
                 console.log(err);
 
@@ -30,5 +30,5 @@ export default function useFetchLogements(url) {
         fetchLogements();
     }, [url]);
 
-    return { Logements, isLoading, error };
+    return { logements, isLoading, error };
 }
