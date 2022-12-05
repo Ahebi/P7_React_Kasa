@@ -7,8 +7,7 @@ import Rating from "../components/Rating";
 import { Navigate } from "react-router-dom";
 export default function FicheLogement() {
     let params = useParams();
-    const { logements, isLoading, error } =
-        useFetchLogements("/logements.json");
+    const { logements, isLoading } = useFetchLogements("/logements.json");
 
     console.log("Logements : ");
     console.log(logements);

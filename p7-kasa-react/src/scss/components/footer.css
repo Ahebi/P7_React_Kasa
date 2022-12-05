@@ -1,6 +1,7 @@
 /*Version Desktop*/
 @media screen and (min-width: 820px) {
   footer {
+    margin-top: 50px;
     background-color: black;
     display: flex;
     flex-direction: column;
