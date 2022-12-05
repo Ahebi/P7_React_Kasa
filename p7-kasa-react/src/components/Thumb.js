@@ -2,7 +2,10 @@ import useFetchLogements from "../hooks/useFetchLogements";
 import { NavLink } from "react-router-dom";
 
 export default function Thumb() {
-    const logements = useFetchLogements();
+    const { logements, isLoading, error } = useFetchLogements();
+    console.log("logements : ");
+    console.log(logements);
+    console.log("isloading = " + isLoading);
 
     return (
         <div id="gallery_logements">

@@ -13,7 +13,7 @@ export default function header() {
                             Accueil
                         </NavLink>
                     </li>
-                    <li className="header_li">
+                    <li>
                         <NavLink to="/a_propos">A Propos</NavLink>
                     </li>
                 </ul>

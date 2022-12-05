@@ -57,14 +57,14 @@ li {
         justify-content: space-around;
         list-style: none;
     }
-    .header_li {
+    header li {
         margin: 0px;
     }
 
     #ulNav a {
         color: $mainColor;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
     }
     .active {
         text-decoration: underline;
@@ -88,7 +88,7 @@ li {
         align-self: center;
     }
     #header_nav {
-        width: 70%;
+        width: 73%;
     }
     #ulNav {
         width: 100%;
@@ -105,7 +105,7 @@ li {
     #ulNav a {
         color: $mainColor;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
     }
     .active {
         text-decoration: underline;

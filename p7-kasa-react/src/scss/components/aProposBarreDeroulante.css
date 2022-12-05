@@ -7,6 +7,23 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes deroulement {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes deroulement {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /*version Desktop*/
 @media screen and (min-width: 820px) {
   .aProposBarreDeroulante {
@@ -34,15 +51,14 @@ a {
   .aProposBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
-    height: 0px;
     padding: 8px;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
     color: #ff6060;
-    transition: transform ease-in-out 300ms;
+    display: none;
     transform-origin: top;
-    transform: scaleY(0);
+    transform: translateY(-999px);
   }
   .aProposBarreDeroulante_fleche {
     transition: transform ease-in-out 300ms;
@@ -51,10 +67,9 @@ a {
     transform: rotate(180deg);
   }
   .aProposDeroulement {
-    transform: scaleY(1);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    display: block;
+    -webkit-animation: deroulement 300ms ease-in-out forwards;
+            animation: deroulement 300ms ease-in-out forwards;
   }
 }
 /*version Mobile*/
@@ -63,8 +78,9 @@ a {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 5px;
     width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .aProposBarreDeroulante_barre {
     height: 47px;
@@ -83,14 +99,13 @@ a {
   .aProposBarreDeroulante_page {
     background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
+    display: none;
     padding: 8px;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
     color: #ff6060;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    top: -500px;
+    transform: translateY(-999px);
     overflow: hidden;
   }
   .aProposBarreDeroulante_fleche {
@@ -100,6 +115,8 @@ a {
     transform: rotate(180deg);
   }
   .aProposDeroulement {
-    transform: translateY(500px);
+    display: block;
+    -webkit-animation: deroulement 300ms ease-in-out forwards;
+            animation: deroulement 300ms ease-in-out forwards;
   }
 }/*# sourceMappingURL=aProposBarreDeroulante.css.map */

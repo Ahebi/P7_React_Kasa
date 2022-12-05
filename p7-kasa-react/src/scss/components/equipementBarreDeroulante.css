@@ -7,12 +7,30 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes deroulement {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes deroulement {
+  0% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .equipementBarreDeroulante {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   margin: 50px 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .equipementBarreDeroulante_barre {
@@ -41,7 +59,8 @@ a {
   margin-bottom: 10px;
   color: #ff6060;
   transition: all ease-in-out 300ms;
-  transform: translateY(-600px);
+  display: none;
+  transform: translateY(-999px);
   overflow: hidden;
 }
 
@@ -54,5 +73,7 @@ a {
 }
 
 .equipementDeroulement {
-  transform: translateY(-5px);
+  display: block;
+  -webkit-animation: deroulement 300ms ease-in-out forwards;
+          animation: deroulement 300ms ease-in-out forwards;
 }/*# sourceMappingURL=equipementBarreDeroulante.css.map */
